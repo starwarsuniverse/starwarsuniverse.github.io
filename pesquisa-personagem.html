@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SWAPI</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script src="swjs-pesquisas.js"></script>
+
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: black;">
+			<a class="navbar-brand" href="index.html">
+				<img src="logo.png" width="130" alt="">
+			</a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="sobre.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="swapi.html">Characters</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="filmes.html">Movies</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-barra">
+
+				<form onsubmit="doSearch(event, this)">
+					<label>
+						<input type="text" id="search-input" name="searchText" placeholder="Search for a character" class="barra-pesquisa" />
+					</label>
+					<button type="submit" class="botao">Search</button>
+				</form>
+				<div class="resultado" id="result-count"></div>
+
+	
+			</div>
+		</div>
+		<div class="resultados row">
+			<div class="col-1">
+				<table class="resultado" id="result-table"></table>
+		</div>
+	</div>
+</body>
+</html>

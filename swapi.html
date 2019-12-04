@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SWAPI</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script src="swjs-personagens.js"></script>
+
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: black;">
+			<a class="navbar-brand" href="index.html">
+				<img src="logo.png" width="130" alt="">
+			</a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="sobre.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="swapi.html">Characters</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="filmes.html">Movies</a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+	</header>
+
+	<div class="resultado" id="result-count"></div>
+
+	<table class="resultado" id="result-table"></table>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2">
+				<div class="imagens">
+					<ul>
+						<li>
+							<img src="luke.png" width="100" onclick="img01();dadosDoPersonagem(1);">
+							
+						</li>
+						<hr>
+						<li>
+							<img src="darth-vader.png" width="100"  onclick="img02();dadosDoPersonagem(4);">
+
+						</li>  
+						<hr>
+						<li>
+							<img src="c3po.png" width="100"  onclick="img03();dadosDoPersonagem(2);">
+							
+						</li>
+						<hr>
+						<li>
+							<img src="r2d2.png" width="100"  onclick="img04();dadosDoPersonagem(3);">
+							
+						</li>
+						<hr>
+						<li>
+							<img src="obi-wan.png" width="100"  onclick="img05();dadosDoPersonagem(10);">
+							
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+			<div class="pic col-4">
+				<h1 style="color: white; padding-bottom: 10px; font-size: 28px; margin-bottom: 20px; margin-left: 140px;" id="nome">Characters</h1>
+				<img src="todos.jpg" width="600" id="trocarimg" class="imagem">
+				
+			</div>
+			<div class="perso col-2">
+
+				<h1 class="caract" id="nome"></h1>
+				<h1 class="caract" id="nascimento"></h1>
+				<h1 class="caract" id="cabelo"></h1>
+				<h1 class="caract" id="tamanho"></h1>
+				<h1 class="caract" id="peso"></h1>
+				<h1 class="caract" id="cor_pele"></h1>
+				<h1 class="caract" id="cor_olho"></h1>
+				<h1 class="caract" id="genero"></h1>
+				<h1 class="caract" id="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+				<a href="pesquisa-personagem.html">Pesquisar personagens</a>
+			</div>
+			<div class="col-2">
+				<div class="imagens2">
+					<ul>
+						<li>
+							<img src="leia.png" width="100"  onclick="img06();dadosDoPersonagem(5);">
+							
+						</li>
+						<hr>
+						<li>
+							<img src="chewie.png" width="100"  onclick="img07();dadosDoPersonagem(13)">
+							
+						</li>
+						<hr>
+						<li>
+							<img src="anakin.png" width="100"  onclick="img07();dadosDoPersonagem(13);">
+							
+						</li>
+						<hr>
+						<li>
+							<img src="yoda.png" width="100"  onclick="img07();dadosDoPersonagem(13);">
+							
+						</li>
+						
+					</ul>
+				</div>
+
+		</div>
+	</div>
+
+
+</body>
+</html>

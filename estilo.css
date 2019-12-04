@@ -1,0 +1,109 @@
+body {
+  background-image: url('fundo1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+
+.container-fluid{
+	margin-top: 3%;
+}
+.navbar{
+	background: black;
+	height: 90px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+
+
+.personagens{
+	display: inline;
+	font-family: roboto;
+	font-size: 21px;
+
+}
+
+.imagens{
+	
+
+}
+
+.imagens2{
+	margin-top: 13px;
+	margin-left: 50px;
+}
+
+.caract{
+	color: white;
+	font-size: 22px;
+}
+.caracteristicas{
+	color: white;
+	font-size: 18px;
+}
+
+.pic {
+	text-align: center;
+	margin-top: 2%;
+
+
+}
+.perso {
+	margin-top: 6%;
+	margin-left: 220px;
+
+}
+
+
+
+
+.resultado{
+	color: white;
+}
+
+.pesquisa{
+	background-color: white;
+	border: none;
+	height: 30px;
+	border-radius: 3px;
+	padding-left: 9px;
+	padding-bottom: 3px;
+}
+
+
+.botao{
+	border-radius: 3px;
+	border: none;
+	height: 30px;
+	padding-bottom: 3px;
+}
+
+
+.barra-pesquisa{
+
+	width: 500px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 20px; 
+}
+
+.botao{
+	height: 40px;
+	border: none;
+
+}
+
+.col-barra{
+
+	margin-left: 270px;
+	margin-top: 7%;
+}
+
