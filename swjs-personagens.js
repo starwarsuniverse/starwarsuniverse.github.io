@@ -50,6 +50,41 @@
 		function img07 (){
 			document.getElementById("trocarimg").src="Chewbacca.jpg";
 		}
+		function img11 (){
+			document.getElementById("trocarimg").src="ani.jpeg";
+		}
+		function img04 (){
+			document.getElementById("trocarimg").src="r2.jpg";
+		}
+		function img05 (){
+			document.getElementById("trocarimg").src="obi.jpeg";
+		}
+		function img25 (){
+			document.getElementById("trocarimg").src="lando.jpg";
+		}
+		function img21 (){
+			document.getElementById("trocarimg").src="palpatine.jpg";
+		}
+		function img06 (){
+			document.getElementById("trocarimg").src="leia.jpg";
+		}
+		function img07 (){
+			document.getElementById("trocarimg").src="chewie.jpeg";
+		}
+		function img20 (){
+			document.getElementById("trocarimg").src="yoda.jpeg";
+		}
+		function img85 (){
+			document.getElementById("trocarimg").src="rey-2.png";
+		}
+		function img84 (){
+			document.getElementById("trocarimg").src="finn.jpg";
+		}
+		function img86 (){
+			document.getElementById("trocarimg").src="poe.jpeg";
+		}
+
+
 	
 
 
