@@ -3,7 +3,7 @@
 <head>
 	<title>SWAPI</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<link rel="stylesheet" type="text/css" href="pesquisa.css">
+	<link rel="stylesheet" type="text/css" href="pesquisa-filme.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -39,7 +39,7 @@
 		</nav>
 	</header>
 	<div class="container">
-		<div class="img-characters"><img src="personagens.png" alt="characters" width="400"></div>
+		<div class="img-characters"><img src="movies.png" alt="characters" width="300"></div>
 		<form>
 			<input type="text" class="search" placeholder="  Search">
 			<ul class="characters">
@@ -51,7 +51,7 @@
 
 	<script type="text/javascript">
 		const characters = [];
-		const rootURL = 'https://swapi.co/api/people/?page=';
+		const rootURL = 'https://swapi.co/api/films/?page=';
 
 
 		for(let i = 1; i < 10; i++){
@@ -65,7 +65,7 @@
 		function searchCharacters(input, characters) {
 			return characters.filter(character => {
 				const regexInput = new RegExp(input, 'gi');
-				return character.name.match(regexInput) || character.gender.match(regexInput)|| character.height.match(regexInput)|| character.birth_year.match(regexInput)
+				return character.title.match(regexInput) || character.director.match(regexInput)|| character.producer.match(regexInput)|| character.opening_crawl.match(regexInput)
 			});
 		}
 
@@ -73,7 +73,7 @@
 		function showCharacters() {
 			const matchInput = searchCharacters(this.value, characters);
 			const element = matchInput.map(character => {
-				const listItem = `<li class="resultados"><p>${character.name}, ${character.gender}, ${character.height}cm , ${character.birth_year}</p></li>`
+				const listItem = `<li class="resultados"><p>${character.title}, ${character.director}, ${character.producer} , ${character.opening_crawl}</p></li>`
 				return listItem;
 			}).join('');
 			charactersList.innerHTML = element;
